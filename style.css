@@ -1,0 +1,27 @@
+body {
+  color: pink;
+}
+
+.important-text {
+  color: green !important;
+}
+
+.red-text {
+  color: red;
+}
+
+.red-text {
+  color: orange;
+}
+
+.blue-text {
+  color: blue;
+}
+
+#yellow-text {
+  color: yellow;
+}
+
+.important-text {
+  color: green !important;
+}

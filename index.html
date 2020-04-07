@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Overrides and Inheritance</title>
+  </head>
+  <body>
+    <h1>Pink is inherited from body tag</h1>
+
+    <h1 class="red-text">Red class overrides inherited pink</h1>
+
+    <h1 class="red-text">Second red class with color orange overrides red</h1>
+
+    <h1 class="blue-text" class="red-text">
+      Applying two color classes gives precedent to the first one in the h1 tag
+    </h1>
+
+    <h1 class="red-text" class="blue-text">
+      Proof that the above statement is true
+    </h1>
+
+    <h1 class="red-text" class="blue-text" id="yellow-text">
+      An ID will always override a class, regardless of its position within the
+      H1 tag
+    </h1>
+
+    <h1 id="yellow-text" class="red-text" class="blue-text">
+      Proof that the above statement is true
+    </h1>
+
+    <h1
+      class="important-text"
+      class="red-text"
+      class="blue-text"
+      id="yellow-text"
+    >
+      Using !important will override classes and IDs as long as it appears first
+      in the list of classes
+    </h1>
+
+    <h1
+      class="red-text"
+      class="blue-text"
+      id="yellow-text"
+      class="important-text"
+    >
+      Proof that the above statement is true
+    </h1>
+
+    <h1
+      class="red-text"
+      class="blue-text"
+      id="yellow-text"
+      class="important-text"
+      style="color: aqua;"
+    >
+      In-line styling in HTML will always override classes, IDs, and the
+      !important tag
+    </h1>
+  </body>
+</html>
